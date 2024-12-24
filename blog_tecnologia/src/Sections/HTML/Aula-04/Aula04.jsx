@@ -18,6 +18,8 @@ import {
   Image,
   Image2,
   SectionResumo,
+  LinkBtn,
+  BtnVoltar,
 } from './Aula04Style';
 
 export default function Aula04() {
@@ -26,11 +28,8 @@ export default function Aula04() {
       <Section>
         <Inicio>
           <h2>Aula 04 HTML - Forms </h2>
-          <img src="/Images/Html/Aula04/inicio1_1.png" alt="linha pontilhada" />
         </Inicio>
-        <img src="/Images/Html/Aula04/inicio1_3.png" alt="Lâmpada" />
       </Section>
-      <hr />
       <SectionOne>
         <h2>Relembrando o HTML</h2>
         <p>
@@ -40,16 +39,15 @@ export default function Aula04() {
           entendido por outras pessoas e computadores.
         </p>
       </SectionOne>
-      <hr />
       <SectionOfficial>
-        <img src="/Images/Html/Aula04/codigo1.png" alt="" />
-        <div>
           <h2>O que é um Form?</h2>
+        <div>
+        <img src="/Images/Html/Aula04/codigo1.png" alt="" />
           <p>
-            A tag <span>&lsaquo;form&rsaquo; &lsaquo;/form&rsaquo;</span>{' '}
-            (formulário) é utilizada para agrupar elementos interativos, onde o
-            usuário vai inserir informações que serão enviadas para um servidor.
-            As tags mais comuns em formulários são:
+            A tag <span>&lt;form&gt; &lt;/form&gt;</span> (formulário) é
+            utilizada para agrupar elementos interativos, onde o usuário vai
+            inserir informações que serão enviadas para um servidor. As tags
+            mais comuns em formulários são:
             <ol>
               <li>Form (formulário)</li>
               <li>Label (etiqueta)</li>
@@ -59,7 +57,6 @@ export default function Aula04() {
           </p>
         </div>
       </SectionOfficial>
-      <hr />
       <SectionPrincipal>
         <DivInput>
           <img src="/Images/Html/Aula04/codigo2.png" alt="código de inputs" />
@@ -75,21 +72,16 @@ export default function Aula04() {
             <li>
               Primeiro criamos uma tag form que será responsável por agrupar
               todos os campos e buttons que iremos usar. É a TAG mais importante
-              do formulário.{' '}
-              <span>&lsaquo;form&rsaquo; Conteúdo &lsaquo;/form&rsaquo;</span>
+              do formulário. <span>&lt;form&gt; Conteúdo &lt;/form&gt;</span>
             </li>
             <li>
               Agora criamos uma tag label que é usada como legenda para a tag
               input que vamos usar no próximo passo.{' '}
-              <span>
-                &lsaquo;label for=&quot; &quot;&rsaquo;Nome:
-                &lsaquo;/label&rsaquo;
-              </span>
+              <span>&lt;label for=&quot; &quot;&gt;Nome: &lt;/label&gt;</span>
             </li>
           </ul>
         </DivLabel>
       </SectionPrincipal>
-      <hr />
       <SectionInput>
         <h2>Aprendendo mais sobre os Inputs</h2>
         <DivTag>
@@ -119,12 +111,11 @@ export default function Aula04() {
           </p>
         </DivTag>
         <Para>
-          &lsaquo; input <span>type=</span>&quot;text&quot; <span>id=</span>
+          &lt; input <span>type=</span>&quot;text&quot; <span>id=</span>
           &quot;nome&quot; <span>placeholder=</span>&quot;Digite seu nome&quot;
-          /&rsaquo;
+          /&gt;
         </Para>
       </SectionInput>
-      <hr />
       <SectionPrincipal>
         <FigureForm>
           <img
@@ -136,7 +127,6 @@ export default function Aula04() {
           </a>
         </FigureForm>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -147,7 +137,6 @@ export default function Aula04() {
           <img src="/Images/Html/Aula04/inputText2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -158,7 +147,6 @@ export default function Aula04() {
           <img src="/Images/Html/Aula04/inputEmail2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -171,7 +159,6 @@ export default function Aula04() {
           <img src="/Images/Html/Aula04/inputNumber2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -182,7 +169,6 @@ export default function Aula04() {
           <img src="/Images/Html/Aula04/inputSenha2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionSecond>
         <SectionRadio>
           <div>
@@ -199,7 +185,6 @@ export default function Aula04() {
           web.
         </Paragraph>
       </SectionSecond>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -213,7 +198,6 @@ export default function Aula04() {
           <img src="/Images/Html/Aula04/inputCheck2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <h2>Tipos de Input</h2>
@@ -224,7 +208,6 @@ export default function Aula04() {
           <Image src="/Images/Html/Aula04/inputSubmit2.png" alt="" />
         </InputText>
       </SectionPrincipal>
-      <hr />
       <SectionPrincipal>
         <InputText>
           <SectionResumo>
@@ -246,6 +229,9 @@ export default function Aula04() {
           </SectionResumo>
         </InputText>
       </SectionPrincipal>
+      <LinkBtn href="/html">
+        <BtnVoltar>&#11148; Voltar</BtnVoltar>
+      </LinkBtn>
     </Main>
   );
 }

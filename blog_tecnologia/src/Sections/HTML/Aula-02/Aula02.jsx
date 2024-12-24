@@ -1,16 +1,18 @@
+import './Aula02Styles.scss'
+
 export default function Aula02() {
   return (
-    <>
-      <section id="aula-02">
-        <div className="div_html">
+    <main id="aula-02">
+      <section>
+        <div className="div-html">
           <h2>Introdução ao HTML - Aula 02</h2>
           <h2>Tag de Listas</h2>
           <p>
             Para exibir listas em nossos documentos. Temos 2 opções, uma tag
-            para listas ordenadas <span>&lsaquo;ol&rsaquo;</span>
-            <span>&lsaquo;/ol&rsaquo;</span> (ordered list) e outra para listas
-            não ordenadas <span>&lsaquo;ul&rsaquo;</span>
-            <span>&lsaquo;/ul&rsaquo;</span> (unordered list).
+            para listas ordenadas <span>&lt;ol&gt;</span>
+            <span>&lt;/ol&gt;</span> (ordered list) e outra para listas não
+            ordenadas <span>&lt;ul&gt;</span>
+            <span>&lt;/ul&gt;</span> (unordered list).
           </p>
           <figure>
             <img
@@ -25,16 +27,14 @@ export default function Aula02() {
             />
           </figure>
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Tag de Imagem</h2>
           <p>
             Também podemos fazer uso de medias em nossos documentos, as imagens
             são um ótimo meio de expressar uma ideia. Elas podem ser
             representadas em nosso documento HTML através da TAG{' '}
-            <span>
-              &lsaquo;img src=&quot; &quot; alt=&quot; &quot; /&rsaquo;
-            </span>{' '}
-            da seguinte forma:
+            <span>&lt;img src=&quot; &quot; alt=&quot; &quot; /&gt;</span> da
+            seguinte forma:
           </p>
           <figure>
             <img
@@ -44,11 +44,11 @@ export default function Aula02() {
             />
           </figure>
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Links</h2>
           <p>
-            Tag de link <span>&lsaquo;a&rsaquo;&lsaquo;/a&rsaquo;</span>, tag
-            fundamental da web, através do link das páginas definido no atributo{' '}
+            Tag de link <span>&lt;a&gt;&lt;/a&gt;</span>, tag fundamental da
+            web, através do link das páginas definido no atributo{' '}
             <span>href=&quot; &quot;</span> nós conseguimos associar, abrir e
             acessar os diferentes sites existentes na internet criando o que
             chamamos de rede.
@@ -66,33 +66,33 @@ export default function Aula02() {
           </p>
 
           <p>
-            &#10139;<span> _blank:</span> abre o link em uma nova janela.
+            &#10139; <span> _blank:</span> abre o link em uma nova janela.
           </p>
 
           <p>
-            &#10139;<span>_self:</span> Usando este valor, o documento vinculado
-            será exibido no mesmo quadro ou janela onde está o link. Esse valor
-            é especialmente útil quando a tag BASE for usada para especificar um
-            quadro de destino padrão diferente do atual.
+            &#10139; <span>_self:</span> Usando este valor, o documento
+            vinculado será exibido no mesmo quadro ou janela onde está o link.
+            Esse valor é especialmente útil quando a tag BASE for usada para
+            especificar um quadro de destino padrão diferente do atual.
           </p>
           <p>
-            &#10139;<span>_parent: </span> Esse valor faz com que o documento
+            &#10139; <span>_parent: </span> Esse valor faz com que o documento
             seja exibido no FRAMESET (conjunto de molduras) pai do quadro atual.
           </p>
           <p>
-            &#10139;<span>_top: </span>Força a exibição do link em todo o espaço
-            da janela do navegador, destruindo toda a estrutura do quadro. Este
-            valor deve ser utilizado sempre que criarmos um link para uma página
-            fora do nosso website.
+            &#10139; <span>_top: </span>Força a exibição do link em todo o
+            espaço da janela do navegador, destruindo toda a estrutura do
+            quadro. Este valor deve ser utilizado sempre que criarmos um link
+            para uma página fora do nosso website.
           </p>
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Iframe (Quadro embutido)</h2>
           <p>
             Essa tag{' '}
             <span>
-              &lsaquo;iframe src=&quot; &quot; name=&quot; &quot; height=&quot;
-              &quot; width=&quot; &quot;&rsaquo;&lsaquo;/iframe&rsaquo;
+              &lt;iframe src=&quot; &quot; name=&quot; &quot; height=&quot;
+              &quot; width=&quot; &quot;&gt;&lt;/iframe&gt;
             </span>{' '}
             especifica um quadro embutido. Um quadro embutido é usado para
             incorporar outro documento no documento HTML atual.
@@ -114,7 +114,7 @@ export default function Aula02() {
             altura e largura especifica do seu quadro embutido.
           </p>
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Iframe (VIDEO)</h2>
           <div className="iframe_img_p">
             <img
@@ -156,7 +156,7 @@ export default function Aula02() {
             alt="código do iframe e vídeo"
           />
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Iframe (Mapa)</h2>
           <div className="iframe_img_p">
             <img
@@ -195,9 +195,13 @@ export default function Aula02() {
             alt="código do iframe de mapa"
           />
         </div>
-        <div className="div_html">
+        <div className="div-html">
           <h2>Dicionário dos Devs</h2>
-          <div className="iframe_img_p">
+          <div className="dicionario-dev">
+            <img
+              src="/Images/Html/Aula02/dicionario1.png"
+              alt="código base de html"
+            />
             <ul className="list_alt">
               <li>
                 <span>HTML: </span> Linguagem de Marcação de Hipertexto;
@@ -239,14 +243,14 @@ export default function Aula02() {
                 <span>Body:</span> Corpo.
               </li>
             </ul>
-            <img
-              src="/Images/Html/Aula02/dicionario1.png"
-              alt="código base de html"
-            />
           </div>
-          <div className="div_html">
+          <div className="div-html">
             <h2>Dicionário dos Devs</h2>
-            <div className="iframe_img_p">
+            <div className="dicionario-dev">
+              <img
+                src="/Images/Html/Aula02/dicionario2.png"
+                alt="código base de html"
+              />
               <ul className="list_alt">
                 <li>
                   <span>Frameborder</span> — Borda do quadro;
@@ -270,14 +274,13 @@ export default function Aula02() {
                   <span>Style:</span> Estilo.
                 </li>
               </ul>
-              <img
-                src="/Images/Html/Aula02/dicionario2.png"
-                alt="código base de html"
-              />
             </div>
           </div>
         </div>
+      <a href="/html" className='linkBtn'>
+        <button>&#11148; Voltar</button>
+      </a>
       </section>
-    </>
+    </main>
   );
 }

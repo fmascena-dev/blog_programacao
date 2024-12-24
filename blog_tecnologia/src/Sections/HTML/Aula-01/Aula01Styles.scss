@@ -1,0 +1,63 @@
+#aula-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        width: 80%;
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 2rem;
+            text-decoration: underline;
+        }
+
+        mark {
+            font-weight: bold;
+        }
+        span {
+            font-weight: bold;
+        }
+
+        p {
+            flex-wrap: wrap;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        img {
+            width: 70%;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        button {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 2rem;
+      padding: 0.5rem 3rem;
+      margin: 2rem;
+      border: 1px solid #00d9ff;
+      font-size: 2rem;
+      background-color: transparent;
+      cursor: pointer;
+      box-shadow: 1px 1px 10px 5px #211;
+
+      &:hover {
+        box-shadow: 1px 1px 10px 5px #00d9ff;
+      }
+    }
+    .linkBtn {
+      text-decoration: none;
+    }
+    }
+}

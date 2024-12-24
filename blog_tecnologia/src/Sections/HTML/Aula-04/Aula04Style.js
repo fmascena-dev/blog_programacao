@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
-  background-color: #93d3e5;
-  font-size: 1.2rem;
-
-  hr {
-    width: 100%;
-    margin: 3rem 0;
-    border: none;
-    border-bottom: 4px solid #000;
-  }
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 45, 79, 1) 45%,
+    rgba(0, 192, 255, 1) 100%
+  );
+  font-size: 1.7rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 
   img {
     border-radius: 15px;
@@ -20,13 +23,21 @@ export const SectionPrincipal = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 2rem 0;
 `;
 
 export const Section = styled.section`
-  background-color: #fff;
+  background-color: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 45, 79, 1) 45%,
+    rgba(0, 192, 255, 1) 100%
+  );
   color: #000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 3rem 0;
+  /* width: 100%; */
 
   img {
     margin-right: 10%;
@@ -37,11 +48,6 @@ export const Inicio = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6rem;
-
-  h2 {
-    margin-left: 2rem;
-  }
 `;
 
 export const SectionOne = styled.section`
@@ -65,16 +71,20 @@ export const SectionOne = styled.section`
 export const SectionOfficial = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   gap: 4rem;
+  padding: 0 5rem;
 
   div {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
+    justify-content: space-between;
+    gap: 5rem;
 
     p {
+      width: 50%;
+      flex-wrap: wrap;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -82,8 +92,12 @@ export const SectionOfficial = styled.section`
     }
 
     ol {
-      margin-left: 1rem;
+      margin-left: 2rem;
     }
+
+  }
+  img {
+    width: 40%;
   }
 `;
 
@@ -93,6 +107,7 @@ export const DivInput = styled.div`
   justify-content: space-evenly;
   gap: 1rem;
   text-align: center;
+  margin: 4rem 0;
 `;
 
 export const DivLabel = styled.div`
@@ -121,7 +136,7 @@ export const SectionInput = styled.section`
 export const Para = styled.p`
   font-weight: 400;
   font-size: 1.5rem;
-  border: 2px solid red;
+  border: 2px solid #00d9ff;
   border-radius: 2rem;
   padding: 1rem;
 
@@ -144,7 +159,7 @@ export const DivTag = styled.div`
     padding: 2rem;
 
     ul {
-      margin: 1rem 0 0 1rem;
+      margin: 1rem 0 0 1.3rem;
     }
   }
 `;
@@ -160,15 +175,17 @@ export const FigureForm = styled.figure`
     font-size: 1.2rem;
     font-weight: bold;
     border: 0.1rem solid #000;
-    background-color: #ff0000;
+    background-color: #00d9ff;
     border-radius: 2rem;
-    color: #fff;
+    color: #222;
     cursor: pointer;
-    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 1);
-
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 1);
+    
     &:hover {
-      background-color: #ff0056;
+      color: #e8e8e8;
+      background-color:transparent;
       text-decoration: underline;
+      box-shadow: 1px 1px 10px 5px rgba(0, 255, 255, 1);
     }
   }
 `;
@@ -206,7 +223,7 @@ export const SectionRadio = styled.section`
 
 export const Paragraph = styled.p`
   font-size: 1.5rem;
-  border: 2px solid red;
+  border: 2px solid #00d9ff;
   border-radius: 2rem;
   padding: 1rem;
   width: 70%;
@@ -228,11 +245,38 @@ export const SectionResumo = styled.section`
   gap: 2rem;
   margin-bottom: 2rem;
 
+  h4 {
+    font-size: 2rem;
+  }
+
   p {
     font-size: 1.5rem;
-    border: 2px solid red;
+    border: 2px solid #00d9ff;
     border-radius: 2rem;
     padding: 1rem;
     width: 70%;
   }
 `
+
+export const BtnVoltar = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem 3rem;
+  margin: 2rem;
+  border: 1px solid #00d9ff;
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 5px #211;
+  
+  &:hover {
+    box-shadow: 1px 1px 10px 5px #00d9ff;
+  }
+  `
+
+export const LinkBtn = styled.a`
+  color: #e8e8e8;
+  text-decoration: none;
+`;
